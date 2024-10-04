@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+
+    .mybtn{
+        border: none;
+        width: 100%;
+        padding: 15px 0;
+        background-color: #13152C;
+        color: white;
+        opacity: 50%;
+    }
+    .mybtn:hover{
+        background-color: #393A4F;
+    }
+    .mybtn:active{
+        background-color: #393A4F;
+    }
+    a{
+        text-decoration: none;
+    }
+    .active{
+        background-color: #393A4F;
+    }
+    .logo{
+        margin-top: -50px;
+    }
+    .menu{
+        margin-top: -30px;
+    }
+</style>
+
+<body>
+
+    <div style="border-top: 1px solid #E43726;" class="d-flex ">
+        <!-- sidebar -->
+        <div style="background-color: #13152C; width: 250px;" class=" vh-100  " >
+            <div class="d-flex justify-content-center align-items-center mt-3 ">
+                <img class="img-fluid logo"  src="designs/logo.png" width="250" height="250" alt="">
+            </div>
+            <div class="menu">
+                <a href="dashboard.html" class="active mybtn d-flex justify-content-start align-items-center gap-2 px-3">
+                    <i class="fa-solid fa-gauge"></i>
+                    Dashboard
+                </a>
+                <a href="class.html" class="mybtn d-flex justify-content-start align-items-center gap-2 px-3">
+                    <i class="fa-solid fa-house"></i>
+                    class
+                </a>
+                <a href="#" class="mybtn d-flex justify-content-start align-items-center gap-2 px-3">
+                    <i class="fa-solid fa-file"></i>
+                    activity
+                </a>
+                <a href="#" class="mybtn d-flex justify-content-start align-items-center gap-2 px-3">
+                    <i class="fa-solid fa-file"></i>
+                    report
+                </a>
+                <a href="student.html" class="mybtn d-flex justify-content-start align-items-center gap-2 px-3">
+                    <i class="fa-sharp fa-solid fa-book-open-reader"></i>
+                    students
+                </a>
+                <a href="#" class="mybtn d-flex justify-content-start align-items-center gap-2 px-3">
+                    <i class="fa-solid fa-book-open"></i>
+                    marks
+                </a>
+                <a href="#" class="mybtn d-flex justify-content-start align-items-center gap-2 px-3">
+                    <i class="fa-solid fa-book-open"></i>
+                    submarks
+                </a>
+                <a href="#" class="mybtn d-flex justify-content-start align-items-center gap-2 px-3">
+                    <i class="fa-solid fa-book-open"></i>
+                    users
+                </a>
+                <a href="#" class="mybtn d-flex justify-content-start align-items-center gap-2 px-3">
+                    <i class="fa-solid fa-book-open"></i>
+                    faash form
+                </a>
+            </div>
+        </div>
+        <!-- content -->
+        <div style="background-color: #F9F7FC;" class=" w-100  ">
+            <!-- header -->
+            <div style="background-color: #EDECF2;" class=" p-3 d-flex justify-content-between align-items-center text-black-50">
+                <div>
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="d-flex justify-content-end align-items-center gap-3 ">
+                    <i class="fa-solid fa-users-viewfinder"></i>
+                    <div class="dropdown">
+                        <button  type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-user"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <a class="btn text-black px-5 py-1" href="index.html">logout</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- actual content -->
+            <div class="content m-4">
+                <div>
+                    <h5>dashboard</h5>
+                    <p>welcome to mohamed Dashboard</p>
+                </div>
+                <div style="margin-top: -15px;" class="d-flex  justify-content-between   gap-2   ">
+                    <div style="background-color: #E43726; padding-left: 20px; padding-top: 20px; padding-right: 20px; " class="rounded w-75">
+                        <div class="d-flex justify-content-start  ">
+                            <div class=" d-flex  justify-content-evenly gap-3 align-items-center   ">
+                                <i style="width: 50px; background-color: #E95644; height: 50px;" class="d-flex justify-content-center align-items-center  fa-sharp fa-solid fa-file"></i>
+                                <div class="text-white">
+                                    <p style="margin-bottom: -3px;" class="opacity-75 ">CLASSNUMBER</p>
+                                    <div class="d-flex align-items-center gap-2 ">
+                                        <p class="fw-bold opacity-75 ">15</p>
+                                        <i style="color: rgba(0, 128, 0, 0.44);" class="mb-3 opacity-75 fa-solid fa-arrow-up"></i>
+                                    </div>                               
+                                </div>
+                            </div>
+                        </div>
+                        <div style="margin-bottom: 0;" class="d-flex justify-content-between align-items-center mt-4 text-white opacity-50 ">
+                            <p>since last month</p>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div style="background-color: #E43726; padding-left: 20px; padding-top: 20px; padding-right: 20px; " class="rounded w-75">
+                        <div class="d-flex justify-content-start  ">
+                            <div class=" d-flex  justify-content-evenly gap-3 align-items-center   ">
+                                <i style="width: 50px; background-color: #E95644; height: 50px;" class="d-flex justify-content-center align-items-center  fa-sharp fa-solid fa-file"></i>
+                                <div class="text-white">
+                                    <p style="margin-bottom: -3px;" class="opacity-75 ">Total Class Monitors</p>
+                                    <p class="fw-bold opacity-75 ">14</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="margin-bottom: 0;" class="d-flex justify-content-between align-items-center mt-4 text-white opacity-50 ">
+                            <p>since last month</p>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div style="background-color: #E43726; padding-left: 20px; padding-top: 20px; padding-right: 20px; " class="rounded w-75">
+                        <div class="d-flex justify-content-start  ">
+                            <div class=" d-flex  justify-content-evenly gap-3 align-items-center   ">
+                                <i style="width: 50px; background-color: #E95644; height: 50px;" class="d-flex justify-content-center align-items-center  fa-sharp fa-solid fa-file"></i>
+                                <div class="text-white">
+                                    <p style="margin-bottom: -3px;" class="opacity-75 ">STUDENTS</p>
+                                    <div class="d-flex align-items-center gap-2 ">
+                                        <p class="fw-bold opacity-75 ">302</p>
+                                        <i style="color: rgba(0, 128, 0, 0.44);" class="mb-3 opacity-75 fa-solid fa-arrow-up"></i>
+                                    </div>                                
+                                </div>
+                            </div>
+                        </div>
+                        <div style="margin-bottom: 0;" class="d-flex justify-content-between align-items-center mt-4 text-white opacity-50 ">
+                            <p>since last month</p>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white mt-3 s rounded  ">
+                    <p class="p-2 opacity-50  fw-bold ">top five students</p>
+                    <table class="table shadow-sm mt-3 opacity-75 ">
+                        <thead>
+                          <tr>
+                            <th scope="col">StudentID</th>
+                            <th scope="col">StudentName</th>
+                            <th scope="col">TotalMarks</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">12345</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">12345</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">12345</th>
+                            <td> Larry the Bird</td>
+                            <td>muniir</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">12345</th>
+                            <td> Larry the Bird</td>
+                            <td>muniir</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">12345</th>
+                            <td> Larry the Bird</td>
+                            <td>muniir</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">12345</th>
+                            <td> Larry the Bird</td>
+                            <td>muniir</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+            
+
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>
